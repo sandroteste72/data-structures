@@ -1,8 +1,8 @@
 package com.arpitech;
 
-public class Queue {
+public class Queue<T> {
 
-    private Node nodeReferenceQueueEntry;
+    private Node<T> nodeReferenceQueueEntry;
 
     public Queue() {
         this.nodeReferenceQueueEntry = null;
@@ -12,13 +12,13 @@ public class Queue {
         return nodeReferenceQueueEntry == null ? true : false;
     }
 
-    public void enqueue(Object obj) {
-        Node newNode = new Node(obj);
+    public void enqueue(T object) {
+        Node newNode = new Node(object);
         newNode.setNodeReference(nodeReferenceQueueEntry);
         nodeReferenceQueueEntry = newNode;
     }
 
-    public Object first() {
+    public T first() {
         if (!isEmpty()) {
             Node firstNode = nodeReferenceQueueEntry;
             while (true) {
@@ -29,12 +29,12 @@ public class Queue {
                     break;
                 }
             }
-            return firstNode.getObject();
+            return (T)firstNode.getObject();
         }
         return null;
     }
 
-    public Object dequeue() {
+    public T dequeue() {
         if (!isEmpty()) {
             Node firstNode = nodeReferenceQueueEntry;
             Node auxiliaryNode = nodeReferenceQueueEntry;
@@ -48,7 +48,7 @@ public class Queue {
                     break;
                 }
             }
-            return firstNode.getObject();
+            return (T)firstNode.getObject();
         }
         return null;
     }

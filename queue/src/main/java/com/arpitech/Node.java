@@ -1,14 +1,14 @@
 package com.arpitech;
 
-public class Node {
+public class Node<T> {
 
-    private Object object;
-    private Node nodeReference;
+    private T object;
+    private Node<T> nodeReference;
 
     public Node() {
     }
 
-    public Node(Object object) {
+    public Node(T object) {
         this.nodeReference = null;
         this.object = object;
     }
@@ -17,7 +17,7 @@ public class Node {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 

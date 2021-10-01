@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Queue myQueue = new Queue();
+        Queue<String> myQueue = new Queue<>();
 
         myQueue.enqueue("first");
         myQueue.enqueue("second");
