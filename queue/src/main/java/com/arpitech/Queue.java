@@ -12,12 +12,13 @@ public class Queue {
         return nodeReferenceQueueEntry == null ? true : false;
     }
 
-    public void enqueue(Node newNode) {
+    public void enqueue(Object obj) {
+        Node newNode = new Node(obj);
         newNode.setNodeReference(nodeReferenceQueueEntry);
         nodeReferenceQueueEntry = newNode;
     }
 
-    public Node first() {
+    public Object first() {
         if (!isEmpty()) {
             Node firstNode = nodeReferenceQueueEntry;
             while (true) {
@@ -28,12 +29,12 @@ public class Queue {
                     break;
                 }
             }
-            return firstNode;
+            return firstNode.getObject();
         }
         return null;
     }
 
-    public Node dequeue() {
+    public Object dequeue() {
         if (!isEmpty()) {
             Node firstNode = nodeReferenceQueueEntry;
             Node auxiliaryNode = nodeReferenceQueueEntry;
@@ -47,7 +48,7 @@ public class Queue {
                     break;
                 }
             }
-            return firstNode;
+            return firstNode.getObject();
         }
         return null;
     }
