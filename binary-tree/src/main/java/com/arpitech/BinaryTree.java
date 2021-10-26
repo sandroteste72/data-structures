@@ -35,7 +35,7 @@ public class BinaryTree<T extends Comparable<T>> {
     private void displayInOrder(BinaryNode<T> current) {
         if (current != null) {
             displayInOrder(current.getLeftNode());
-            System.out.println(current.getContents() + ", ");
+            System.out.print(current.getContents() + ", ");
             displayInOrder(current.getRightNode());
         }
     }
@@ -49,7 +49,7 @@ public class BinaryTree<T extends Comparable<T>> {
         if (current != null) {
             displayPostOrder(current.getLeftNode());
             displayPostOrder(current.getRightNode());
-            System.out.println(current.getContents() + ", ");
+            System.out.print(current.getContents() + ", ");
         }
     }
 
@@ -60,7 +60,7 @@ public class BinaryTree<T extends Comparable<T>> {
 
     private void displayPreOrder(BinaryNode<T> current) {
         if (current != null) {
-            System.out.println(current.getContents() + ", ");
+            System.out.print(current.getContents() + ", ");
             displayPreOrder(current.getLeftNode());
             displayPreOrder(current.getRightNode());
         }
