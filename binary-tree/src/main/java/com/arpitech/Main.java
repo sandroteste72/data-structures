@@ -16,7 +16,7 @@ public class Main {
         myTree.insert(new Obj(20));
         myTree.insert(new Obj(31));
         myTree.insert(new Obj(29));
-        myTree.insert(new Obj(32));
+        //myTree.insert(new Obj(32));
         myTree.remove(new Obj(32));
 
         myTree.displayInOrder();
