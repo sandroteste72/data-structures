@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a292cbe3-2334-410e-b019-d2f65f270dd5" name="Changes" comment="" />
+    <list default="true" id="a292cbe3-2334-410e-b019-d2f65f270dd5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../stack2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stack2/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,12 +24,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../queue2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk-11.0.12" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.arpitech.Main" />
-      <module name="stack2" />
+      <module name="queue2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.arpitech.*" />
